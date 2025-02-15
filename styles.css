@@ -1,9 +1,30 @@
 body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Inter", serif;
     margin: 0 auto;
     text-align: center;
-    max-width: 720px;
+    max-width: 1440px;
     background-color: #E5E5E5;
+    letter-spacing: -0.25px;
+    line-height: 1.3;
+
+}
+
+p {
+    font-weight: 300;
+    color: #292929;
+    text-align: left;
+
+}
+
+h4 {
+    text-overflow: ellipsis; /* will make [...] at the end */
+    width: 200px; /* change to your preferences */
+    white-space: wrap;
+    font-weight: 600;
+}
+
+h3 {
+    margin: 0;
 }
 
 .container{
@@ -31,9 +52,9 @@ body{
     margin-bottom: 5px;
 }
 
-#aburi-head:hover{
+/* #aburi-head:hover{
     background-color: #EE7F51;
-}
+} */
 
 #aburi-text {
     display: inline;
@@ -42,16 +63,20 @@ body{
     padding: 10px 15px;
     border-radius: 10px;
     margin-top: 5px;
+    color: #1D3557;
+    text-align: center;
 }
 
-#aburi-text:hover{
+/* #aburi-text:hover{
     background-color: #1D3557;
-}
+} */
 
 .mid-info{
     background-color: #EAF4F4;
     color: #1D3557;
     padding: 50px 0px;
+    animation: slideInUp;
+    animation-duration: 0.5s;
 }
 
 .info-heading{
@@ -60,52 +85,85 @@ body{
 
 .three-places{
     display: flex;
+    /* margin: 0 8px; */
     padding: 0 24px;
+    justify-content: center;
+    /* width: 650px; */
+    /* margin: 0 auto; */
 }
 
 .place{
-    padding: 10px 10px;
+    padding: 24px;
+    text-align: left;
+    width: 200px;
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+    margin: 4px;
+    box-shadow: 0 4px 6px #d2d2d2;
 }
 
 .place:hover{
     background-color: #D4EBEB;
     border-radius: 8px;
+    animation: pulse;
+    animation-duration: 1s;
 }
 
 .h4-images{
-    width: 100px;
+    width: 200px;
     height: 100px;
-    border-radius: 50px;
+    border-radius: 4px;
 }
 
 .biz-card{
     display: flex;
     margin: 50px auto 0px;
-    width: 400px;
-    background-color: #1D3557;
-    color: white;
-    border-bottom: 8px solid #EE7F51;
-    border-radius: 10px;
-    padding: 23px 13px;
+    width: 500px;
+    /* background-color: #1D3557; */
+    color: #292929;
+    border-bottom: 5px solid #EE7F51;
+    /* border-radius: 10px; */
+    padding: 24px;
+    text-align: left;
     
 }
 
+.biz-card h2 {
+    margin: 0;
+}
+
 .biz-card:hover{
-    background-color: #E63946;
-    border-bottom: 8px solid #1D3557;
+    background-color: #f0f0f0;
+    border: 1px solid #EE7F51;
+    border-bottom: 5px solid #EE7F51;
+    box-shadow: 0 12px 32px #c9c9c9;
+    border-radius: 24px;
+    animation: heartBeat;
+    animation-duration: 2s;
 }
 
 #details{
-    font-style: italic;
+    /* font-style: italic; */
+    letter-spacing: -0.5px;
+    line-height: 1.3;
 }
 
 .biz-info {
     padding: 0 20px;
 }
+
 .profile{
-    width: 600px;
-    height: 260px;
-    border-radius: 10px;
+    width: 450px;
+    height: 150px;
+    border: 1px solid rgb(200, 200, 200);
     background-image: url("img/images.jpg");
-    background-size: cover;
+    background-size:cover;
+    border-radius: 24px ;
 }
+
+/* #profile-img {
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+    background-image: url("img/images.jpg");
+} */
